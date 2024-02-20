@@ -1,6 +1,9 @@
 # nix-bazel-abslcpp
 
-quickstart template for using nix, bazel, and abslcpp
+zero bullshit template for using nix, bazel, and abslcpp.
+
+get started with writing cpp with absl in a couple minutes without touching a
+single makefile.
 
 ## Setup 
 

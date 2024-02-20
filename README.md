@@ -5,7 +5,7 @@ quickstart template for using nix, bazel, and abslcpp
 ## Setup 
 
 ```
-$ nix-shell shell.nix
+$ nix-develop 
 $ bazel run :hello_world
 ```
 

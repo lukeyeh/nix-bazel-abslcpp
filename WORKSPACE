@@ -17,12 +17,14 @@ http_archive(
   name = "com_google_googletest",
   urls = ["https://github.com/google/googletest/archive/5df0241ea4880e5a846775d3efc8b873f7b36c31.zip"],
   strip_prefix = "googletest-5df0241ea4880e5a846775d3efc8b873f7b36c31",
+  sha256 = "ab8890fba4068efad5edd214dfb46c6b0c6af84feef06dde433d5607334de718"
 )
 
 http_archive(
     name = "com_github_google_benchmark",
     urls = ["https://github.com/google/benchmark/archive/3d85343d65832d05b4dcd6666640e0e38b981c33.zip"],
     strip_prefix = "benchmark-3d85343d65832d05b4dcd6666640e0e38b981c33",
+    sha256 = "bde8a76919b57d5ddea96c60f7fc32a42b2158f53f95fc9bc3a3d8889ee30416"
 )
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")

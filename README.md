@@ -6,6 +6,7 @@ quickstart template for using nix, bazel, and abslcpp
 
 ```
 $ nix-develop 
+$ bazel test --test_tag_filters=-benchmark @com_google_absl//...
 $ bazel run :hello_world
 ```
 

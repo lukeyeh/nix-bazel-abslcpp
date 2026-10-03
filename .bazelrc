@@ -1,0 +1,9 @@
+build --cxxopt=-std=c++20
+build --host_cxxopt=-std=c++20
+
+# Abseil enables header-parsing actions, which have no source file and crash
+# the compile_commands.json generator.
+build --features=-parse_headers
+build --host_features=-parse_headers
+
+test --test_output=errors

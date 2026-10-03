@@ -1,0 +1,10 @@
+module(name = "nix_bazel_abslcpp")
+
+bazel_dep(name = "rules_cc", version = "0.2.25")
+bazel_dep(name = "abseil-cpp", version = "20260817.0")
+bazel_dep(name = "googletest", version = "1.18.0.bcr.1")
+bazel_dep(name = "google_benchmark", version = "1.9.5")
+
+# Generates compile_commands.json for clangd: `bazel run :compile_commands`
+# https://github.com/wolfd/bazel-compile-commands
+bazel_dep(name = "wolfd_bazel_compile_commands", version = "0.5.2", dev_dependency = True)
